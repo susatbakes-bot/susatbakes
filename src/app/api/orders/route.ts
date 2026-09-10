@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
 import {
-  addOrder,
   getAllOrders,
   getOrdersByDate,
   updateOrderStatus,
@@ -130,7 +129,7 @@ export async function POST(req: NextRequest) {
       createdAt: new Date().toISOString(),
     };
 
-    addOrder(newOrder);
+// addOrder(newOrder); // Removed: orders are not persisted to filesystem
 
     // Send confirmation emails to customer and alert to admin
     try {
