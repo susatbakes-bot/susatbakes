@@ -1,18 +1,14 @@
+import tls from 'tls';
+import net from 'net';
+import fs from 'fs';
+import path from 'path';
 import os from 'os';
+import { Order } from '@/types/bakery';
+
 const LOG_DIR = process.env.NODE_ENV !== 'production' ? path.join(os.tmpdir(), 'susatbakes') : '';
 
 function logEmailFallback(type: string, to: string, subject: string, content: string) {
   if (!LOG_DIR) return;
-  try {
-    if (!fs.existsSync(LOG_DIR)) fs.mkdirSync(LOG_DIR, { recursive: true });
-    const logFile = path.join(LOG_DIR, 'sent_emails.log');
-    const logEntry = `[${new Date().toISOString()}] [${type}] To: ${to} | Subject: ${subject}\n${content}\n------------------------------------------------------------\n`;
-    fs.appendFileSync(logFile, logEntry, 'utf8');
-    console.log(`[Email Service] ${type} email logged for ${to}: "${subject}"`);
-  } catch (err) {
-    console.error('[Email Service] Failed to write email log', err);
-  }
-}
   try {
     if (!fs.existsSync(LOG_DIR)) fs.mkdirSync(LOG_DIR, { recursive: true });
     const logFile = path.join(LOG_DIR, 'sent_emails.log');
