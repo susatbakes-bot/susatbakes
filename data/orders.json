@@ -1,0 +1,524 @@
+{
+  "orders": [
+    {
+      "id": "SB-181801",
+      "date": "2026-09-18",
+      "slot": "evening",
+      "customer": {
+        "name": "Fozia Khalid",
+        "email": "ruhabwbutt06@gmail.com",
+        "phone": "+923219645676",
+        "address": "Muhalla Raitanwala St#2 near Sialkot sweets Gujranwala"
+      },
+      "items": [
+        {
+          "id": "52-1.5-lb-loaf",
+          "productId": "52",
+          "name": "Banana Bread",
+          "category": "Muffins & Breads",
+          "variant": "1.5 lb Loaf",
+          "price": 1549,
+          "quantity": 1,
+          "emoji": "🍞",
+          "imageUrl": "https://susatbakes.wordpress.com/wp-content/uploads/2026/09/pexels-photo-6829492.jpeg"
+        }
+      ],
+      "total": 1549,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1789030181693_5d83fcb7.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-10T08:49:41.801Z"
+    },
+    {
+      "id": "SB-369150",
+      "date": "2026-09-24",
+      "slot": "afternoon",
+      "customer": {
+        "name": "adil",
+        "email": "ruhabbbb@gmail.com",
+        "phone": "+92 308 4977958",
+        "address": "model town"
+      },
+      "items": [
+        {
+          "id": "3-standard",
+          "productId": "3",
+          "name": "Hello World!",
+          "category": "Uncategorized",
+          "variant": "Standard",
+          "price": 1299,
+          "quantity": 1,
+          "emoji": "🍪"
+        }
+      ],
+      "total": 1299,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788977369094_9c0e196f.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T18:09:29.150Z"
+    },
+    {
+      "id": "SB-308546",
+      "date": "2026-09-30",
+      "slot": "afternoon",
+      "customer": {
+        "name": "ruhab",
+        "email": "ruhabbbb@gmail.com",
+        "phone": "+923084977958",
+        "address": "68 Bishopthorpe Road"
+      },
+      "items": [
+        {
+          "id": "3-standard",
+          "productId": "3",
+          "name": "Hello World!",
+          "category": "Uncategorized",
+          "variant": "Standard",
+          "price": 1299,
+          "quantity": 1,
+          "emoji": "🍪"
+        }
+      ],
+      "total": 1299,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788976308459_fb7737c1.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T17:51:48.546Z"
+    },
+    {
+      "id": "SB-138839",
+      "date": "2026-09-18",
+      "slot": "afternoon",
+      "customer": {
+        "name": "Abdul Waheed",
+        "email": "ruhabwbutt06@gmail.com",
+        "phone": "+923084977958",
+        "address": "Muhalla Raitanwala St#2 near Sialkot sweets Gujranwala"
+      },
+      "items": [
+        {
+          "id": "banana-bread-1.5-lb-loaf",
+          "productId": "banana-bread",
+          "name": "Classic Banana Bread Loaf",
+          "category": "Muffins & Breads",
+          "variant": "1.5 lb Loaf",
+          "price": 1549,
+          "quantity": 1,
+          "emoji": "🍞"
+        }
+      ],
+      "total": 1549,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788974138729_c719a74b.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T17:15:38.839Z"
+    },
+    {
+      "id": "SB-012746",
+      "date": "2026-09-24",
+      "slot": "morning",
+      "customer": {
+        "name": "Fozia",
+        "email": "ruhabwbutt06@gmail.com",
+        "phone": "+92 321 9645676",
+        "address": "Model Town"
+      },
+      "items": [
+        {
+          "id": "brownies-box-of-9-chocolate-chip",
+          "productId": "brownies",
+          "name": "Artisanal Brownies",
+          "category": "Brownies",
+          "variant": "Box of 9",
+          "flavor": "Chocolate Chip",
+          "price": 1999,
+          "quantity": 1,
+          "emoji": "🍫"
+        },
+        {
+          "id": "cookies-box-of-6-nutella-stuffed",
+          "productId": "cookies",
+          "name": "NYC Thick & Chewy Cookies",
+          "category": "Cookies",
+          "variant": "Box of 6",
+          "flavor": "Nutella Stuffed",
+          "price": 1399,
+          "quantity": 1,
+          "emoji": "🍪"
+        }
+      ],
+      "total": 3398,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788974012008_92cfb140.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T17:13:32.746Z"
+    },
+    {
+      "id": "SB-586606",
+      "date": "2026-09-13",
+      "slot": "afternoon",
+      "customer": {
+        "name": "fozia",
+        "email": "ruhabwbutt06@gmail.com",
+        "phone": "+92 321 9645676",
+        "address": "Muhalla Raitanwala"
+      },
+      "items": [
+        {
+          "id": "nutella-muffins-box-of-9",
+          "productId": "nutella-muffins",
+          "name": "Nutella Lava Muffins",
+          "category": "Muffins & Breads",
+          "variant": "Box of 9",
+          "price": 1549,
+          "quantity": 1,
+          "emoji": "🧁"
+        }
+      ],
+      "total": 1549,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788973585877_572897e7.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T17:06:26.606Z"
+    },
+    {
+      "id": "SB-779269",
+      "date": "2026-09-11",
+      "slot": "afternoon",
+      "customer": {
+        "name": "ruhab",
+        "email": "ruhabbbb@gmail.com",
+        "phone": "+923084977958",
+        "address": "68 Bishopthorpe Road"
+      },
+      "items": [
+        {
+          "id": "brownies-box-of-4-chocolate-chip",
+          "productId": "brownies",
+          "name": "Artisanal Brownies",
+          "category": "Brownies",
+          "variant": "Box of 4",
+          "flavor": "Chocolate Chip",
+          "price": 1349,
+          "quantity": 1,
+          "emoji": "🍫"
+        }
+      ],
+      "total": 1349,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788970779129_a3dba6fe.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T16:19:39.269Z"
+    },
+    {
+      "id": "SB-707884",
+      "date": "2026-09-16",
+      "slot": "afternoon",
+      "customer": {
+        "name": "ruhab",
+        "email": "ruhabbbb@gmail.com",
+        "phone": "+923084977958",
+        "address": "68 Bishopthorpe Road"
+      },
+      "items": [
+        {
+          "id": "brownies-box-of-4-chocolate-chip",
+          "productId": "brownies",
+          "name": "Artisanal Brownies",
+          "category": "Brownies",
+          "variant": "Box of 4",
+          "flavor": "Chocolate Chip",
+          "price": 1349,
+          "quantity": 1,
+          "emoji": "🍫"
+        }
+      ],
+      "total": 1349,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788970707676_a5c394f2.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T16:18:27.884Z"
+    },
+    {
+      "id": "SB-602179",
+      "date": "2026-09-17",
+      "slot": "afternoon",
+      "customer": {
+        "name": "ruhab",
+        "email": "ruhabbbb@gmail.com",
+        "phone": "+923084977958",
+        "address": "68 Bishopthorpe Road"
+      },
+      "items": [
+        {
+          "id": "brownies-box-of-4-chocolate-chip",
+          "productId": "brownies",
+          "name": "Artisanal Brownies",
+          "category": "Brownies",
+          "variant": "Box of 4",
+          "flavor": "Chocolate Chip",
+          "price": 1349,
+          "quantity": 1,
+          "emoji": "🍫"
+        }
+      ],
+      "total": 1349,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788969601253_f13dd007.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T16:00:02.179Z"
+    },
+    {
+      "id": "SB-551061",
+      "date": "2026-09-17",
+      "slot": "afternoon",
+      "customer": {
+        "name": "sus",
+        "email": "ruhabbbb@gmail.com",
+        "phone": "+92 308 4977958",
+        "address": "model town"
+      },
+      "items": [
+        {
+          "id": "cookies-box-of-6-nyc-chocolate-chip",
+          "productId": "cookies",
+          "name": "NYC Thick & Chewy Cookies",
+          "category": "Cookies",
+          "variant": "Box of 6",
+          "flavor": "NYC Chocolate Chip",
+          "price": 1199,
+          "quantity": 1,
+          "emoji": "🍪"
+        }
+      ],
+      "total": 1199,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788956549634_c1fb22a2.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T12:22:31.061Z"
+    },
+    {
+      "id": "SB-092489",
+      "date": "2026-09-25",
+      "slot": "afternoon",
+      "customer": {
+        "name": "Sarah Khan",
+        "email": "sarah.khan@example.com",
+        "phone": "+92 308 4977958",
+        "address": "Model Town, Gujranwala"
+      },
+      "items": [
+        {
+          "id": "item-1",
+          "productId": "brownies",
+          "name": "Artisanal Brownies",
+          "category": "Brownies",
+          "variant": "Box of 6",
+          "flavor": "Salted Caramel",
+          "price": 1849,
+          "quantity": 1
+        }
+      ],
+      "total": 1849,
+      "paymentType": "jazzcash",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T12:14:52.489Z"
+    },
+    {
+      "id": "SB-982965",
+      "date": "2026-09-25",
+      "slot": "afternoon",
+      "customer": {
+        "name": "Sarah Khan",
+        "email": "sarah.khan.test@gmail.com",
+        "phone": "+92 308 4977958",
+        "address": "Model Town, Gujranwala"
+      },
+      "items": [
+        {
+          "id": "item-live-1",
+          "productId": "brownies",
+          "name": "Artisanal Brownies",
+          "category": "Brownies",
+          "variant": "Box of 6",
+          "flavor": "Salted Caramel",
+          "price": 1849,
+          "quantity": 1
+        }
+      ],
+      "total": 1849,
+      "paymentType": "jazzcash",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T12:13:02.965Z"
+    },
+    {
+      "id": "SB-083105",
+      "date": "2026-09-10",
+      "slot": "morning",
+      "customer": {
+        "name": "ruhab",
+        "email": "ruhabbbb@gmail.com",
+        "phone": "+92 308 4977958",
+        "address": "Muhalla Raitanwala Street 2"
+      },
+      "items": [
+        {
+          "id": "brownies-box-of-4-chocolate-chip",
+          "productId": "brownies",
+          "name": "Artisanal Brownies",
+          "category": "Brownies",
+          "variant": "Box of 4",
+          "flavor": "Chocolate Chip",
+          "price": 1349,
+          "quantity": 1,
+          "emoji": "🍫"
+        },
+        {
+          "id": "cookies-box-of-6-nyc-chocolate-chip",
+          "productId": "cookies",
+          "name": "NYC Thick & Chewy Cookies",
+          "category": "Cookies",
+          "variant": "Box of 6",
+          "flavor": "NYC Chocolate Chip",
+          "price": 1199,
+          "quantity": 1,
+          "emoji": "🍪"
+        }
+      ],
+      "total": 2548,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788955082439_61990000.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T11:58:03.105Z"
+    },
+    {
+      "id": "SB-821111",
+      "date": "2026-09-17",
+      "slot": "afternoon",
+      "customer": {
+        "name": "Abdul Waheed",
+        "email": "ruhabbbb@gmail.com",
+        "phone": "+923219645676",
+        "address": "Muhalla Raitanwala St#2 near Sialkot sweets Gujranwala"
+      },
+      "items": [
+        {
+          "id": "banana-bread-1.5-lb-loaf",
+          "productId": "banana-bread",
+          "name": "Classic Banana Bread Loaf",
+          "category": "Muffins & Breads",
+          "variant": "1.5 lb Loaf",
+          "price": 1549,
+          "quantity": 1,
+          "emoji": "🍞"
+        }
+      ],
+      "total": 1549,
+      "paymentType": "jazzcash",
+      "proofUrl": "/uploads/receipt_1788950820827_2e43c8b0.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T10:47:01.111Z"
+    },
+    {
+      "id": "SB-440019",
+      "date": "2026-09-20",
+      "slot": "afternoon",
+      "customer": {
+        "name": "Ayesha Malik",
+        "email": "ayesha@example.com",
+        "phone": "+92 308 4977958",
+        "address": "DC Colony, Gujranwala"
+      },
+      "items": [
+        {
+          "id": "test-1",
+          "productId": "brownies",
+          "name": "Artisanal Brownies",
+          "category": "Brownies",
+          "variant": "Box of 6",
+          "flavor": "Salted Caramel",
+          "price": 1849,
+          "quantity": 1
+        }
+      ],
+      "total": 1849,
+      "paymentType": "jazzcash",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T10:40:40.019Z"
+    },
+    {
+      "id": "SB-248321",
+      "date": "2026-09-18",
+      "slot": "afternoon",
+      "customer": {
+        "name": "Abdul Waheed",
+        "phone": "+923219645676",
+        "address": "Muhalla Raitanwala St#2 near Sialkot sweets Gujranwala"
+      },
+      "items": [
+        {
+          "id": "banana-muffins-box-of-9",
+          "productId": "banana-muffins",
+          "name": "Golden Banana Muffins",
+          "category": "Muffins & Breads",
+          "variant": "Box of 9",
+          "price": 1449,
+          "quantity": 1,
+          "emoji": "🧁"
+        },
+        {
+          "id": "banana-bread-1.5-lb-loaf",
+          "productId": "banana-bread",
+          "name": "Classic Banana Bread Loaf",
+          "category": "Muffins & Breads",
+          "variant": "1.5 lb Loaf",
+          "price": 1549,
+          "quantity": 1,
+          "emoji": "🍞"
+        },
+        {
+          "id": "nutella-muffins-box-of-9",
+          "productId": "nutella-muffins",
+          "name": "Nutella Lava Muffins",
+          "category": "Muffins & Breads",
+          "variant": "Box of 9",
+          "price": 1549,
+          "quantity": 1,
+          "emoji": "🧁"
+        }
+      ],
+      "total": 4547,
+      "paymentType": "bank_transfer",
+      "proofUrl": "/uploads/receipt_1788949245907_3e10915a.png",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T10:20:48.321Z"
+    },
+    {
+      "id": "SB-016010",
+      "date": "2026-09-17",
+      "slot": "afternoon",
+      "customer": {
+        "name": "ruhab",
+        "phone": "+923084977958",
+        "address": "68 Bishopthorpe Road"
+      },
+      "items": [
+        {
+          "id": "cookies-box-of-6-nutella-stuffed",
+          "productId": "cookies",
+          "name": "NYC Thick & Chewy Cookies",
+          "category": "Cookies",
+          "variant": "Box of 6",
+          "flavor": "Nutella Stuffed",
+          "price": 1399,
+          "quantity": 1,
+          "emoji": "🍪"
+        }
+      ],
+      "total": 1399,
+      "paymentType": "cod",
+      "status": "Delivered",
+      "createdAt": "2026-09-09T10:16:56.010Z"
+    }
+  ]
+}
