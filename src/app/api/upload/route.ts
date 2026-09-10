@@ -1,20 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import crypto from 'crypto';
-
-const UPLOAD_DIR = path.join(process.cwd(), 'public', 'uploads');
-
-function ensureUploadDir() {
-  if (!fs.existsSync(UPLOAD_DIR)) {
-    fs.mkdirSync(UPLOAD_DIR, { recursive: true });
-  }
-}
+import { put } from '@vercel/blob';
 
 export async function POST(req: NextRequest) {
   try {
-    ensureUploadDir();
-
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
 
@@ -49,14 +38,13 @@ export async function POST(req: NextRequest) {
 
     const ext = file.name.split('.').pop() || 'jpg';
     const uniqueFileName = `receipt_${Date.now()}_${crypto.randomBytes(4).toString('hex')}.${ext}`;
-    const destinationPath = path.join(UPLOAD_DIR, uniqueFileName);
 
-    const buffer = Buffer.from(await file.arrayBuffer());
-    fs.writeFileSync(destinationPath, buffer);
+    // Upload directly to Vercel Blob
+    const blob = await put(`receipts/${uniqueFileName}`, file, {
+      access: 'public',
+    });
 
-    const fileUrl = `/uploads/${uniqueFileName}`;
-
-    return NextResponse.json({ success: true, fileUrl }, { status: 201 });
+    return NextResponse.json({ success: true, fileUrl: blob.url }, { status: 201 });
   } catch (err: any) {
     console.error('File upload error:', err);
     return NextResponse.json(
