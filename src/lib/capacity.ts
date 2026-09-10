@@ -16,12 +16,13 @@ export function isCutoffPassed(dateStr: string): boolean {
   return now.getTime() > cutoff.getTime();
 }
 
-export function getOrderCount(dateStr: string): number {
-  return getOrdersByDate(dateStr).length;
+export async function getOrderCount(dateStr: string): Promise<number> {
+  const orders = await getOrdersByDate(dateStr);
+  return orders.length;
 }
 
-export function getRemainingCapacity(dateStr: string): number {
-  const count = getOrderCount(dateStr);
+export async function getRemainingCapacity(dateStr: string): Promise<number> {
+  const count = await getOrderCount(dateStr);
   return Math.max(0, MAX_ORDERS_PER_DAY - count);
 }
 

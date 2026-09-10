@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import crypto from 'crypto';
 import {
+  addOrder,
   getAllOrders,
   getOrdersByDate,
   updateOrderStatus,
@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
         );
       }
 
-      const existingOrders = getOrdersByDate(date);
+      const existingOrders = await getOrdersByDate(date);
       const count = existingOrders.length;
       const remaining = Math.max(0, MAX_ORDERS_PER_DAY - count);
       const cutoffPassed = isCutoffPassed(date);
@@ -49,7 +49,7 @@ export async function GET(req: NextRequest) {
     }
 
     // Otherwise return all orders (for admin)
-    const all = getAllOrders();
+    const all = await getAllOrders();
     return NextResponse.json({ orders: all });
   } catch (err: any) {
     console.error('GET /api/orders error:', err);
@@ -88,13 +88,13 @@ export async function POST(req: NextRequest) {
     // Enforce 24‑hour advance booking rule
     if (isWithin24Hours(date)) {
       return NextResponse.json(
-        { error: 'Orders must be placed at least 24 hours in advance.' },
+        { error: 'Orders must be placed at least 24 hours in advance.' },
         { status: 400 }
       );
     }
 
     // Enforce 15 orders/day capacity
-    const remaining = getRemainingCapacity(date);
+    const remaining = await getRemainingCapacity(date);
     if (remaining <= 0) {
       return NextResponse.json(
         { error: 'Sorry! This bake day is fully booked (max 15 orders reached).' },
@@ -129,7 +129,8 @@ export async function POST(req: NextRequest) {
       createdAt: new Date().toISOString(),
     };
 
-// addOrder(newOrder); // Removed: orders are not persisted to filesystem
+    // Save order into Postgres database
+    await addOrder(newOrder);
 
     // Send confirmation emails to customer and alert to admin
     try {
@@ -162,7 +163,7 @@ export async function PATCH(req: NextRequest) {
     if (!orderId || !status) {
       return NextResponse.json({ error: 'orderId and status are required.' }, { status: 400 });
     }
-    const updated = updateOrderStatus(orderId, status);
+    const updated = await updateOrderStatus(orderId, status);
     if (!updated) {
       return NextResponse.json({ error: 'Order not found.' }, { status: 404 });
     }
@@ -171,3 +172,4 @@ export async function PATCH(req: NextRequest) {
     return NextResponse.json({ error: 'Failed to update order status.' }, { status: 500 });
   }
 }
+
